@@ -1,0 +1,24 @@
+<module>
+  <rawname>pbdirectory</rawname>
+  <repo>extended</repo>
+  <name>Phonebook Directory</name>
+  <version>17.0.1</version>
+	<publisher>Sangoma Technologies Corporation</publisher>
+	<license>GPLv3+</license>
+	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
+  <category>Admin</category>
+  <description>Provides a dial-by-name directory for phonebook entries</description>
+  <more-info>https://wiki.freepbx.org/display/FPG/Feature+Code+Descriptions#FeatureCodeDescriptions-PhonebookDirectory</more-info>
+	<changelog>
+      	*17.0.1 * Version 17.0.1
+	</changelog>
+  <depends>
+    <version>17.0.1</version>
+    <module>phonebook</module>
+    <module>speeddial</module>
+  </depends>
+  <md5sum>fdd65968e753840a60086c4a9cf4836f</md5sum>
+  <supported>
+    <version>17.0</version>
+  </supported>
+</module>

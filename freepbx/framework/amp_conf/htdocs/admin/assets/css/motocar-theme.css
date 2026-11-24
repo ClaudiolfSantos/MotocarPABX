@@ -1,0 +1,271 @@
+/* MotocarPABX Custom Theme - Branco & Vermelho */
+:root {
+  --motocar-red: #d60000;
+  --motocar-red-dark: #a80000;
+  --motocar-red-soft: #fff2f2;
+  --motocar-border: #ebd4d4;
+  --motocar-text: #222222;
+  --motocar-muted: #666666;
+  --motocar-white: #ffffff;
+}
+
+body {
+  background-color: #fafafa;
+  color: var(--motocar-text);
+}
+
+/* Navbar */
+.freepbx-navbar .navbar {
+  background-color: var(--motocar-white) !important;
+  border: none !important;
+  border-bottom: 2px solid var(--motocar-red) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  min-height: 44px;
+}
+
+.freepbx-navbar .navbar .navbar-brand {
+  height: 42px;
+  padding: 4px 12px 4px 10px;
+}
+
+.freepbx-navbar .navbar .navbar-brand img {
+  height: 28px !important;
+  max-height: 28px;
+  width: auto;
+}
+
+.freepbx-navbar .navbar-nav > .nav-item > .nav-link {
+  color: var(--motocar-text) !important;
+  font-weight: 500;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.freepbx-navbar .navbar-nav > .nav-item > .nav-link:hover,
+.freepbx-navbar .navbar-nav > .nav-item > .nav-link:focus,
+.freepbx-navbar .navbar-nav > .nav-item.show > .nav-link {
+  color: var(--motocar-red) !important;
+  background-color: var(--motocar-red-soft) !important;
+}
+
+.freepbx-navbar .dropdown-menu {
+  background-color: var(--motocar-white);
+  border: 1px solid var(--motocar-border);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.freepbx-navbar .dropdown-item:hover,
+.freepbx-navbar .dropdown-item:focus,
+.freepbx-navbar .dropdown-item.active {
+  background-color: var(--motocar-red) !important;
+  color: var(--motocar-white) !important;
+}
+
+.freepbx-navbar .navbar .stuck-right {
+  top: 7px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 0;
+  padding: 0 6px 0 0;
+}
+
+.freepbx-navbar .navbar .stuck-right .motocar-search-item {
+  display: inline-flex;
+  align-items: center;
+}
+
+.freepbx-navbar .navbar .stuck-right #fpbxsearch {
+  position: relative !important;
+  top: auto !important;
+  right: auto !important;
+  transition: none !important;
+  display: inline-flex !important;
+  align-items: center;
+  width: 220px;
+  height: 27px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+}
+
+.freepbx-navbar .navbar .stuck-right #fpbxsearch input.typeahead {
+  width: 100%;
+  height: 27px !important;
+  padding: 2px 8px;
+  font-size: 13px;
+  border: 1px solid var(--motocar-border);
+  border-radius: 4px;
+  background-color: var(--motocar-white);
+  color: var(--motocar-text);
+  box-shadow: none;
+}
+
+.freepbx-navbar .navbar .stuck-right #fpbxsearch input.typeahead:focus {
+  border-color: var(--motocar-red);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(214, 0, 0, 0.12);
+}
+
+@media (max-width: 991px) {
+  .freepbx-navbar .navbar .stuck-right #fpbxsearch {
+    width: 140px;
+  }
+}
+
+.freepbx-navbar .navbar .stuck-right .btn {
+  background-color: var(--motocar-white);
+  border: 1px solid var(--motocar-border);
+  color: var(--motocar-text);
+}
+
+.freepbx-navbar .navbar .stuck-right #search-btn:hover,
+.freepbx-navbar .navbar .stuck-right .admin-btn > .btn:hover {
+  background-color: var(--motocar-red-soft);
+  border-color: var(--motocar-red);
+  color: var(--motocar-red);
+}
+
+.freepbx-navbar .navbar .stuck-right li > a.reload-btn {
+  background: var(--motocar-red) !important;
+  color: var(--motocar-white) !important;
+  border-color: var(--motocar-red-dark) !important;
+  font-weight: 600;
+}
+
+.freepbx-navbar .navbar .stuck-right li > a.reload-btn:hover {
+  background: var(--motocar-red-dark) !important;
+}
+
+/* Primary & Active Controls */
+.btn-primary,
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus,
+.nav-pills .nav-link.active {
+  background-color: var(--motocar-red) !important;
+  border-color: var(--motocar-red-dark) !important;
+  color: var(--motocar-white) !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--motocar-red-dark) !important;
+  border-color: #800000 !important;
+  color: var(--motocar-white) !important;
+}
+
+.btn-default,
+.btn-secondary {
+  background-color: var(--motocar-white);
+  border-color: var(--motocar-border);
+  color: var(--motocar-text);
+}
+
+.btn-default:hover,
+.btn-secondary:hover {
+  background-color: var(--motocar-red-soft);
+  border-color: var(--motocar-red);
+  color: var(--motocar-red-dark);
+}
+
+/* Links & Tabs */
+a {
+  color: var(--motocar-red);
+}
+
+a:hover,
+a:focus {
+  color: var(--motocar-red-dark);
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs > li.active > a {
+  border-top: 2px solid var(--motocar-red) !important;
+  color: var(--motocar-red) !important;
+  font-weight: 600;
+}
+
+/* Panels & Cards */
+.panel-default > .panel-heading,
+.card-header {
+  background-color: var(--motocar-white);
+  border-bottom: 2px solid var(--motocar-red);
+  color: var(--motocar-text);
+  font-weight: 600;
+}
+
+.panel-primary > .panel-heading {
+  background-color: var(--motocar-red) !important;
+  border-color: var(--motocar-red-dark) !important;
+  color: var(--motocar-white) !important;
+}
+
+/* Login Brand Header */
+.motocar-login-brand {
+  text-align: center;
+  margin: 24px auto 12px auto;
+  padding: 18px 24px;
+  max-width: 460px;
+  background: var(--motocar-white);
+  border: 1px solid var(--motocar-border);
+  border-top: 4px solid var(--motocar-red);
+  border-radius: 6px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+}
+
+.motocar-login-brand img {
+  max-width: 280px;
+  height: auto;
+  display: block;
+  margin: 0 auto 8px auto;
+}
+
+.motocar-login-brand .motocar-login-subtitle {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: var(--motocar-red);
+}
+
+#login_form {
+  background: var(--motocar-white);
+  border: 1px solid var(--motocar-border);
+  border-top: 3px solid var(--motocar-red);
+  border-radius: 6px;
+  padding: 20px 24px;
+  max-width: 460px;
+  margin: 16px auto;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+}
+
+#login_form #customContinue {
+  background-color: var(--motocar-red);
+  border-color: var(--motocar-red-dark);
+  color: var(--motocar-white);
+}
+
+#login_form #customContinue:hover {
+  background-color: var(--motocar-red-dark);
+}
+
+/* Footer */
+#footer {
+  background-color: var(--motocar-white) !important;
+  border-top: 2px solid var(--motocar-red) !important;
+  color: var(--motocar-muted);
+}
+
+#footer #footer_content #footer_logo1 {
+  max-height: 36px;
+  width: auto;
+}
+
+#footer #footer_content #footer_text {
+  color: var(--motocar-muted);
+}
+
+#footer #footer_content #footer_text strong {
+  color: var(--motocar-red);
+}

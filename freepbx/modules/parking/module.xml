@@ -1,0 +1,60 @@
+<module>
+    <rawname>parking</rawname>
+    <repo>standard</repo>
+    <name>Parking Lot</name>
+    <version>17.0.2.11</version>
+    <publisher>Sangoma Technologies Corporation</publisher>
+    <license>GPLv3+</license>
+    <licenselink>https://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
+    <category>Applications</category>
+    <description>Manages parking lot extensions and other options. Parking is a way of putting calls "on hold", and then picking them
+        up from any extension.
+    </description>
+    <more-info>https://sangomakb.atlassian.net/wiki/spaces/PG/pages/24543359/Parking+Module</more-info>
+    <changelog>
+		*17.0.2.11* FREEI-3190 changes done for fixing parking issue 
+		*17.0.2.10* FREEI-3190 Private Parking Lot Not Working After Module Upgrade 
+		*17.0.2.9* FREEI-3107 parking feature codes added on backup and restore 
+		*17.0.2.8* #1066  #1068 Call park failure with core 
+		*17.0.2.7* FREEI-1901 Parking - Parked calls are not displayed in P-Phones 
+		*17.0.2.6* Parking has spelling errors and is a bit dated 
+		*17.0.2.4* bump 
+        *17.0.1* 17.0
+	</changelog>
+    <menuitems>
+        <parking needsenginedb="yes">Parking</parking>
+    </menuitems>
+    <database>
+        <table name="parkplus">
+            <field name="id" type="bigint" primarykey="true" autoincrement="true"/>
+            <field name="defaultlot" type="string" length="10" default="no"/>
+            <field name="type" type="string" length="10" default="public"/>
+            <field name="name" type="string" length="40" default=""/>
+            <field name="parkext" type="string" length="40" default=""/>
+            <field name="parkpos" type="string" length="40" default=""/>
+            <field name="numslots" type="integer" default="4"/>
+            <field name="parkingtime" type="integer" default="45"/>
+            <field name="parkedmusicclass" type="string" length="100" default="default" notnull="false"/>
+            <field name="generatefc" type="string" length="10" default="yes"/>
+            <field name="findslot" type="string" length="10" default="first"/>
+            <field name="parkedplay" type="string" length="10" default="both"/>
+            <field name="parkedcalltransfers" type="string" length="10" default="caller"/>
+            <field name="parkedcallreparking" type="string" length="10" default="caller"/>
+            <field name="alertinfo" type="string" length="254" default=""/>
+            <field name="rvolume" type="string" length="2" default=""/>
+            <field name="cidpp" type="string" length="100" default=""/>
+            <field name="autocidpp" type="string" length="10" default="none"/>
+            <field name="announcement_id" type="integer" notnull="false"/>
+            <field name="comebacktoorigin" type="string" length="10" default="yes"/>
+            <field name="dest" type="string" length="100" default="app-blackhole,hangup,1"/>
+        </table>
+    </database>
+    <depends>
+        <module>core ge 17.0.18.55</module>
+        <module>framework ge 17.0.1</module>
+        <module>callrecording ge 17.0.1</module>
+    </depends>
+    <supported>
+        <version>17.0</version>
+    </supported>
+</module>

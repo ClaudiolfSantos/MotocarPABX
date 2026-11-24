@@ -1,0 +1,19 @@
+<module>
+  <rawname>speeddial</rawname>
+  <repo>extended</repo>
+  <name>Speed Dial Functions</name>
+  <version>17.0.1</version>
+	<publisher>Sangoma Technologies Corporation</publisher>
+	<license>GPLv3+</license>
+	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
+	<changelog>
+		*17.0.1* 17.0.1
+	</changelog>
+  <category>Settings</category>
+  <depends>
+    <module>phonebook</module>
+  </depends>
+  <supported>
+    <version>17.0</version>
+  </supported>
+</module>
